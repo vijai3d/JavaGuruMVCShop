@@ -1,62 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
-<head>
-    <meta charset="UTF-8"/>
-    <title>Title</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.css" rel="stylesheet"/>
-
-    <!-- Custom styles for this template -->
-    <link href="/css/style.css" rel="stylesheet"/>
-    <link href="/css/non-responsive.css" rel="stylesheet"/>
-
-    <link rel="icon" href="/images/3d-cube-icon-32-168258.png"/>
+<head th:replace="common/header::common-header">
 </head>
 <body>
-
-<div class="page-top" style="width: 100%; height: 20px; background-color: #f46b42"></div>
-<!-- Static navbar -->
-<nav class="navbar navbar-default navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li class="dropdown-header">Nav header</li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
-                <li><a href="../navbar-static-top/">Static top</a></li>
-                <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div><!--/.container-fluid -->
-</nav>
+<div th:replace="common/header::navbar"></div>
 
 <div class="container">
     <div class="row">
@@ -165,68 +113,88 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <div class="row">
-                        <div class="col-xs-2">
-                            <img class="img-responsive block-center" src="/images/dvd/51gxkH03TUL._AC_US327_FMwebp_QL65_.jpg"/>
-                        </div>
-                        <div class="col-xs-2">
-                            <img class="img-responsive block-center" src="/images/dvd/51qTAadazGL._AC_US327_FMwebp_QL65_.jpg"/>
-                        </div>
-                        <div class="col-xs-2">
-                            <img class="img-responsive block-center" src="/images/dvd/51UQFxAJGkL._AC_US327_FMwebp_QL65_.jpg"/>
-                        </div>
-                        <div class="col-xs-2">
-                            <img class="img-responsive block-center" src="/images/dvd/61KVKK--60L._AC_US327_FMwebp_QL65_.jpg"/>
-                        </div>
-                        <div class="col-xs-2">
-                            <img class="img-responsive block-center" src="/images/dvd/513ebIYesML._AC_US327_FMwebp_QL65_.jpg"/>
-                        </div>
-                        <div class="col-xs-2">
-                            <img class="img-responsive block-center" src="/images/dvd/514kNlJQRML._AC_US327_FMwebp_QL65_.jpg"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="row">
-                        <div class="col-xs-2">
-                            <img class="img-responsive block-center" src="/images/dvd/51gxkH03TUL._AC_US327_FMwebp_QL65_.jpg"/>
-                        </div>
-                        <div class="col-xs-2">
-                            <img class="img-responsive block-center" src="/images/dvd/51qTAadazGL._AC_US327_FMwebp_QL65_.jpg"/>
-                        </div>
-                        <div class="col-xs-2">
-                            <img class="img-responsive block-center" src="/images/dvd/51UQFxAJGkL._AC_US327_FMwebp_QL65_.jpg"/>
-                        </div>
-                        <div class="col-xs-2">
-                            <img class="img-responsive block-center" src="/images/dvd/61KVKK--60L._AC_US327_FMwebp_QL65_.jpg"/>
-                        </div>
-                        <div class="col-xs-2">
-                            <img class="img-responsive block-center" src="/images/dvd/513ebIYesML._AC_US327_FMwebp_QL65_.jpg"/>
-                        </div>
-                        <div class="col-xs-2">
-                            <img class="img-responsive block-center" src="/images/dvd/514kNlJQRML._AC_US327_FMwebp_QL65_.jpg"/>
+                    <div class="carouse-caption">
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <img class="img-responsive block-center"
+                                     src="/images/dvd/51gxkH03TUL._AC_US327_FMwebp_QL65_.jpg"/>
+                            </div>
+                            <div class="col-xs-2">
+                                <img class="img-responsive block-center"
+                                     src="/images/dvd/51qTAadazGL._AC_US327_FMwebp_QL65_.jpg"/>
+                            </div>
+                            <div class="col-xs-2">
+                                <img class="img-responsive block-center"
+                                     src="/images/dvd/51UQFxAJGkL._AC_US327_FMwebp_QL65_.jpg"/>
+                            </div>
+                            <div class="col-xs-2">
+                                <img class="img-responsive block-center"
+                                     src="/images/dvd/61KVKK--60L._AC_US327_FMwebp_QL65_.jpg"/>
+                            </div>
+                            <div class="col-xs-2">
+                                <img class="img-responsive block-center"
+                                     src="/images/dvd/513ebIYesML._AC_US327_FMwebp_QL65_.jpg"/>
+                            </div>
+                            <div class="col-xs-2">
+                                <img class="img-responsive block-center"
+                                     src="/images/dvd/514kNlJQRML._AC_US327_FMwebp_QL65_.jpg"/>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="row">
                         <div class="col-xs-2">
-                            <img class="img-responsive block-center" src="/images/dvd/51gxkH03TUL._AC_US327_FMwebp_QL65_.jpg"/>
+                            <img class="img-responsive block-center"
+                                 src="/images/dvd/51gxkH03TUL._AC_US327_FMwebp_QL65_.jpg"/>
                         </div>
                         <div class="col-xs-2">
-                            <img class="img-responsive block-center" src="/images/dvd/51qTAadazGL._AC_US327_FMwebp_QL65_.jpg"/>
+                            <img class="img-responsive block-center"
+                                 src="/images/dvd/51qTAadazGL._AC_US327_FMwebp_QL65_.jpg"/>
                         </div>
                         <div class="col-xs-2">
-                            <img class="img-responsive block-center" src="/images/dvd/51UQFxAJGkL._AC_US327_FMwebp_QL65_.jpg"/>
+                            <img class="img-responsive block-center"
+                                 src="/images/dvd/51UQFxAJGkL._AC_US327_FMwebp_QL65_.jpg"/>
                         </div>
                         <div class="col-xs-2">
-                            <img class="img-responsive block-center" src="/images/dvd/61KVKK--60L._AC_US327_FMwebp_QL65_.jpg"/>
+                            <img class="img-responsive block-center"
+                                 src="/images/dvd/61KVKK--60L._AC_US327_FMwebp_QL65_.jpg"/>
                         </div>
                         <div class="col-xs-2">
-                            <img class="img-responsive block-center" src="/images/dvd/513ebIYesML._AC_US327_FMwebp_QL65_.jpg"/>
+                            <img class="img-responsive block-center"
+                                 src="/images/dvd/513ebIYesML._AC_US327_FMwebp_QL65_.jpg"/>
                         </div>
                         <div class="col-xs-2">
-                            <img class="img-responsive block-center" src="/images/dvd/514kNlJQRML._AC_US327_FMwebp_QL65_.jpg"/>
+                            <img class="img-responsive block-center"
+                                 src="/images/dvd/514kNlJQRML._AC_US327_FMwebp_QL65_.jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img class="img-responsive block-center"
+                                 src="/images/dvd/51gxkH03TUL._AC_US327_FMwebp_QL65_.jpg"/>
+                        </div>
+                        <div class="col-xs-2">
+                            <img class="img-responsive block-center"
+                                 src="/images/dvd/51qTAadazGL._AC_US327_FMwebp_QL65_.jpg"/>
+                        </div>
+                        <div class="col-xs-2">
+                            <img class="img-responsive block-center"
+                                 src="/images/dvd/51UQFxAJGkL._AC_US327_FMwebp_QL65_.jpg"/>
+                        </div>
+                        <div class="col-xs-2">
+                            <img class="img-responsive block-center"
+                                 src="/images/dvd/61KVKK--60L._AC_US327_FMwebp_QL65_.jpg"/>
+                        </div>
+                        <div class="col-xs-2">
+                            <img class="img-responsive block-center"
+                                 src="/images/dvd/513ebIYesML._AC_US327_FMwebp_QL65_.jpg"/>
+                        </div>
+                        <div class="col-xs-2">
+                            <img class="img-responsive block-center"
+                                 src="/images/dvd/514kNlJQRML._AC_US327_FMwebp_QL65_.jpg"/>
                         </div>
                     </div>
                 </div>
@@ -251,15 +219,8 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-<script src="/js/bootstrap.min.js"></script>
-<i class="fa fa-edit" aria-hidden="true"></i>
-
+<div th:replace="common/header::body-bottom-scripts"></div>
 <!--footer-->
-<footer class="panel-footer">
-    <p class="text-center">JavaGuruShop&copy; 2016 - <span
-            th:text="${#dates.format(#dates.createNow(), 'yyyy')}"></span></p>
-</footer>
+<div th:replace="common/header::footer"></div>
 </body>
 </html>
